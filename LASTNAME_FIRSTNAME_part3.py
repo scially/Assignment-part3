@@ -60,14 +60,14 @@ def get_dji_data_by_year()->pd.DataFrame:
     return dji_data_year
 
 st.set_page_config(
-    page_title="LASTNAME_FIRSTNAME_part3",
+    page_title="YING_ZHOU_part3",
     page_icon="👋",
 )
 
 def intro():
     import streamlit as st
 
-    st.write("# Welcome to LASTNAME_FIRSTNAME_part3! 👋")
+    st.write("# Welcome to YING_ZHOU_part3! 👋")
     st.markdown('https://lastnamefirstname-keevakr2cr3g5mj92dmik8.streamlit.app')
     st.markdown('# Name: YingZhou')
     st.markdown('''# Program introduction
@@ -88,7 +88,7 @@ def intro():
 
 def more_intro():
     import streamlit as st
-    st.write("# Welcome to LASTNAME_FIRSTNAME_part3! 👋")
+    st.write("# Welcome to YING_ZHOU_part3! 👋")
     st.markdown('# More detailed instructions')
     st.markdown('''1. The focus of the project is to analyze the relationship between the U.S. unemployment rate and DJI and Federal Reserve interest rates through crawlers and machine learning.
 2. The conclusion is that there is a certain relationship between the U.S. unemployment rate and DJI and Federal Reserve interest rates, and the initial hypothesis has been confirmed
