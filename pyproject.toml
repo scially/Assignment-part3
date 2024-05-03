@@ -15,8 +15,8 @@ yfinance = "^0.2.37"
 pandas-datareader = "^0.10.0"
 selenium = "^4.19.0"
 streamlit = "^1.33.0"
-lazypredict = "^0.2.12"
 watchdog = "^4.0.0"
+lazypredict-nightly = "^0.3.2"
 
 
 [build-system]

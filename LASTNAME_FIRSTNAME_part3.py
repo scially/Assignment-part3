@@ -173,7 +173,7 @@ def data_all_state_unemployment_explore():
 
 def regression_analysis():
     import altair as alt
-    from lazypredict.Supervised import LazyRegressor
+    from lazypredict import LazyRegressor
     
     unemployment_data_year = get_unemployment_data_by_year()
     rate_data_year = get_rate_data_by_year()
@@ -203,8 +203,8 @@ def regression_analysis():
         offset = int(x.shape[0] * percetange)
         X_train, y_train = pd.DataFrame(x[:offset]), y.iloc[:offset]
         X_test, y_test = pd.DataFrame(x[offset:]), y.iloc[offset:]
-        reg = LazyRegressor(verbose=0,ignore_warnings=False, custom_metric=None )
-        models, predictions = reg.fit(X_train, X_test, y_train, y_test)
+        reg = LazyRegressor(verbose=0, ignore_warnings=False, custom_metric=None)
+        models, predictions = reg.fit(X_train, X_test, y_train['rate'], y_test['rate'])
         
         st.subheader('Tran Predictions')
         st.write(predictions)
@@ -214,6 +214,7 @@ def regression_analysis():
         st.write('Use ExtraTreeRegressor to Predict')
         reg = sklearn.tree.ExtraTreeRegressor()
         reg.fit(pd.DataFrame(x), y)
+        
         y_pre = reg.predict(pd.DataFrame(x))
         
         y_pre = pd.DataFrame(y_pre)[0]
