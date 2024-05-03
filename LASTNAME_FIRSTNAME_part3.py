@@ -68,7 +68,7 @@ def intro():
     import streamlit as st
 
     st.write("# Welcome to YING_ZHOU_part3! 👋")
-    st.markdown('https://lastnamefirstname-keevakr2cr3g5mj92dmik8.streamlit.app')
+    st.markdown('https://assignment-part3-b33fxnocxavqpregevygjg.streamlit.app/')
     st.markdown('# Name: YingZhou')
     st.markdown('''# Program introduction
 ## The data shows
@@ -79,8 +79,6 @@ def intro():
 1. About General introduction to the program
 2. General introduction to the Raw Data program
 3. Explore to view the original data of all data, you can use the slidebar to view the year interval data you want to pay attention to
-4. U.S. state unemployment rates perform join correlation analysis on the data, and use pandas to calculate the average unemployment rate of each state, the DJI average index and the Federal Reserve average interest rate. You can interact in this module. First, you can view the data of the year of interest through the slidebar. Also click on the icon to view precise data
-5. Regression Analysis uses sklearn for data modeling, using the unemployment rate as the dependent variable, the Federal Reserve interest rate and DJI as independent variables, conducts multiple model regression analyses, and selects the model with the best fitting effect. Through this module we can produce There is a certain correlation between the unemployment rate and the Federal Reserve and DJI.
 ## Work that can continue to be improved
 1. The data can be modeled more accurately, including using neural networks to mine more years of data and accurately analyze the unemployment rate.
 ''')
@@ -94,7 +92,9 @@ def more_intro():
 2. The conclusion is that there is a certain relationship between the U.S. unemployment rate and DJI and Federal Reserve interest rates, and the initial hypothesis has been confirmed
 3. Encountered difficulties in Python implementation, including how sklearn models and how python crawls to obtain information.
 4. Master the basic capabilities of data mining based on Python
-5. Learn neural networks for more precise analysis''')
+5. Learn neural networks for more precise analysis
+6. U.S. state unemployment rates perform join correlation analysis on the data, and use pandas to calculate the average unemployment rate of each state, the DJI average index and the Federal Reserve average interest rate. You can interact in this module. First, you can view the data of the year of interest through the slidebar. Also click on the icon to view precise data
+7. Regression Analysis uses sklearn for data modeling, using the unemployment rate as the dependent variable, the Federal Reserve interest rate and DJI as independent variables, conducts multiple model regression analyses, and selects the model with the best fitting effect. Through this module we can produce There is a certain correlation between the unemployment rate and the Federal Reserve and DJI.''')
 
 def show_raw_table():
     rate_data = get_rate_data()
