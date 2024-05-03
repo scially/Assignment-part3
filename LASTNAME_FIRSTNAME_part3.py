@@ -70,7 +70,7 @@ def intro():
     st.write("# Welcome to LASTNAME_FIRSTNAME_part3! 👋")
     st.markdown('https://lastnamefirstname-keevakr2cr3g5mj92dmik8.streamlit.app')
     st.markdown('# Name: YingZhou')
-    st.markdown('''# 程序介绍
+    st.markdown('''# Program introduction
 ## The data shows
 1. Data Source 1(https://www.investing.com/central-banks/fed-rate-monitor) Real-time and historical interest rate changes from the Federal Reserve in the past and future. As an important tool for macroeconomic control, the Federal Reserve's interest rate has an important impact on the global economy. By adjusting these interest rates, the Fed can effectively manage economic growth, control inflation, influence employment levels, and thereby influence global finance.
 2. Dataset 2 (Yahoo Finance Public API) provides an analysis of the DJI index on the performance of the U.S. stock market. It can be accessed through Yahoo Finance’s external public API and can be used to investigate the impact of the Federal Reserve’s interest rate adjustments on stock market behavior.
